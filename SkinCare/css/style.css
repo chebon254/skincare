@@ -451,6 +451,7 @@ main{
 .products-container{
     padding: 40px 0px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     max-width: 900px;
@@ -461,8 +462,11 @@ main{
     margin: 20px 10px;
 }
 .product-image{
-    height: fit-content;
-    width: fit-content;
+    height: 340px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .product-image img{
     height: 340px;
