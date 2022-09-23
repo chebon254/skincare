@@ -24,6 +24,10 @@ const menu = document.querySelector(".links");
 window.onscroll = ()=>{
     this.scrollY > 20 ? header.classList.add("sticky") : header.classList.remove("sticky");
 }
+window.onscroll = ()=>{
+  this.scrollY > 40 ? toTop.classList.add("show") : toTop.classList.remove("show");
+}
+const toTop = document.querySelector(".to-top");
 
 // Onclick For Menu Bar
 menuBtn.onclick = ()=>{
