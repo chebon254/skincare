@@ -56,12 +56,32 @@ html {
     transform: translateY(0);
     opacity: 1;
 }
+/* .cursor{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate3d(-50%, -50%, 0);
+    top: 1;
+    left: 0;
+    pointer-events: none;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cursor i{
+    font-size: 30px;
+    color: var(--text);
+    transform: rotate(-90deg);
+} */
 /* == || SCROLL BAR == */
 body{
     margin: 0;
     height: 100% !important;
     width: 100% !important;
     background-color: #ffffff;
+    position: absolute;
 }
 .container{
     margin: auto;
@@ -518,6 +538,7 @@ main{
     flex-wrap: wrap;
     flex-direction: row;
     max-width: 900px;
+    margin: auto;
 }
 .product{
     height: fit-content;
@@ -557,7 +578,7 @@ main{
 .product-pricing a{
     font-size: 14px;
     font-weight: 800;
-    color: #323c48;
+    color: var(--active);
     padding: 4px;
     text-decoration: none;
 }
@@ -605,6 +626,7 @@ main{
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 0px 40px;
     flex-wrap: wrap;
 }
@@ -697,6 +719,8 @@ main{
 }
 .testimony-img img{
     border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
 }
 footer{
     background-color: var(--text);
@@ -928,7 +952,7 @@ footer{
     }
     .testimony-select{
         bottom: 60px;
-        left: 60px;
+        left: 80px;
     }
 }
 
