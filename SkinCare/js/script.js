@@ -16,17 +16,25 @@ for (i = 0; i < acc.length; i++) {
 
 /* == Sticky NavBar == */
 //Create A Responsive Menu Hide Show Side Menu
-const header = document.querySelector(".header");
+const header = document.querySelector(".header-scroll");
 const menuBtn = document.querySelector(".menu-btn");
 const cancelBtn = document.querySelector(".cancel-btn");
 const menu = document.querySelector(".links");
-const toTop = document.querySelector(".to-top");
 // Onscroll Change Nav Bar Background
 window.onscroll = ()=>{
-  this.scrollY > 20 ? header.classList.add("sticky") : header.classList.remove("sticky");
+    this.scrollY > 20 ? header.classList.add("sticky") : header.classList.remove("sticky");
 }
-window.onscroll = ()=>{
-  this.scrollY > 40 ? toTop.classList.add("show") : toTop.classList.remove("show");
+
+// Onclick For Menu Bar
+menuBtn.onclick = ()=>{
+    menu.classList.add("active");
+    menuBtn.classList.add("hide");
+}
+
+// Onclick For Cancel Menu 
+cancelBtn.onclick = ()=>{
+    menu.classList.remove("active");
+    menuBtn.classList.remove("hide");
 }
 
 /* == Sticky NavBar == */
@@ -84,3 +92,8 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 /* == BACK TO TOP == */
+function slowScroll() {
+  setTimeout(() => {
+    location.href='#products';
+  }, 1200);
+}

@@ -46,38 +46,43 @@
 </head>
 <body>
     <!-- == HEADER == -->
-        <nav>
-            <div class="top-nav">
-                <div class="container top-nav-cont">
+        <header class="header-scroll">
+            <nav id="nav-bar">
+                <div class="nav-container container">
                     <!-- == Logo == -->
                         <div class="logo">
-                            <a href="index.html"><img src="css/img/Skin care logo.png" alt="Skincare Logo" width="260px"></a>
+                            <a href="index.html"><img src="css/img/Skin care logo.png" alt="Skincare Logo"></a>
                         </div>
-                    <!-- == Search == -->
-                        <div class="nav-search-box">
-                            <form class="nav-search-box-form">
-                                <i class="fas fa-solid fa-search"></i>
-                                <input type="search" name="" id="search" placeholder="Search Products...">
-                            </form>
-                        </div>
-                    <!-- == Product Listing == -->
-                        <div class="nav-prod-listing">
-                            <!-- == Acc Access == -->
-                                <div class="account-access">
-                                    <a href="login.html">LOGIN</a>
-                                    <span>|</span>
-                                    <a href="login.html">SIGNUP</a>
+                        <div class="links" id="links">
+                            <div class="cancel">
+                                <span class="cancel-btn"><i class="fas fa-times"></i></span>
+                            </div>
+                            <a class="active-link" href="index.html">HOME</a>
+                            <a href="team.html">TEAM</a>
+                            <a href="about.html">ABOUT US</a>
+                            <a href="blog.html">BLOG</a>
+                            <!-- == Product Listing == -->
+                                <div class="nav-prod-listing">
+                                    <!-- == Acc Access == -->
+                                    <div class="account-access">
+                                        <a href="login.html">LOGIN</a>
+                                        <span>|</span>
+                                        <a href="login.html">SIGNUP</a>
+                                    </div>
+                                    <div class="cart nav-listings">
+                                        <span class="cart-listings listing"><i class="fas fa-solid fa-shopping-bag"></i><span class="count">6</span></span>
+                                    </div>
+                                    <div class="price nav-listings">
+                                        <p class="price-total">$0.00</p>
+                                    </div>
                                 </div>
-                            <div class="cart nav-listings">
-                                <span class="cart-listings listing"><i class="fas fa-solid fa-shopping-bag"></i><span class="count">6</span></span>
-                            </div>
-                            <div class="price nav-listings">
-                                <p class="price-total">$0.00</p>
-                            </div>
                         </div>
+                    <div class="menu-bar">
+                        <span class="menu-btn"><i class="fas fa-bars"></i></span>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
     <!-- == || HEADER == -->
 
     <!-- == MAIN == -->
@@ -87,7 +92,7 @@
                     <div class="banner-text reveal-fixed">
                         <h1>Skin beauty and care <br> is our priority  for<br><mark>Everyone.</mark></h1>
                         <p>Shop with us today and leave us <br> a comment online.<br></p>
-                        <button>Shop Now</button>
+                        <button onclick="slowScroll()">Shop Now</button>
                     </div>
                     <div class="banner-img">
                         <img src="css/img/collection.png" alt="">
@@ -105,15 +110,13 @@
                                 <p>Its antioxidant properties, along with several other compounds, help inhibit the growth of certain bacteria that can cause infections on your skin.</p>
                             </div>
                             <div class="benefit-click">
-                                <button>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
+                                <button onclick="slowScroll()"><i class="fa-solid fa-arrow-right"></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="products">
+            <section class="products" id="products">
                 <div class="products-headline reveal container">
                     <span>Products</span>
                     <h1>Our Products</h1>
@@ -124,8 +127,8 @@
                             <img src="css/img/aloe gel transparent.png" alt="Product Aloe Vera">
                         </div>
                         <div class="product-info">
-                            <h1 class="product-title">PEPPERMINT</h1>
-                            <p class="product-description">The best product in the shop perfect <br> for your skin</p>
+                            <h1 class="product-title">STARBERRY</h1>
+                            <p class="product-description">Capturing strawberry's fruity scent requires true artistry for your skin</p>
                             <div class="product-pricing">
                                 <a href="#">BUY NOW</a>
                                 <span>|</span>
@@ -138,7 +141,7 @@
                             <img src="css/img/aloe gel transparent two.png" alt="Product Aloe Vera">
                         </div>
                         <div class="product-info">
-                            <h1 class="product-title">PEPPERMINT</h1>
+                            <h1 class="product-title">PASSION</h1>
                             <p class="product-description">The best product in the shop perfect <br> for your skin</p>
                             <div class="product-pricing">
                                 <a href="#">BUY NOW</a>
@@ -152,7 +155,7 @@
                             <img src="css/img/dark aloe gel.png" alt="Product Aloe Vera">
                         </div>
                         <div class="product-info">
-                            <h1 class="product-title">PEPPERMINT</h1>
+                            <h1 class="product-title">ERBA VITA</h1>
                             <p class="product-description">The best product in the shop perfect <br> for your skin</p>
                             <div class="product-pricing">
                                 <a href="#">BUY NOW</a>
@@ -166,7 +169,7 @@
                             <img src="css/img/gel boxed.png" alt="Product Aloe Vera">
                         </div>
                         <div class="product-info">
-                            <h1 class="product-title">PEPPERMINT</h1>
+                            <h1 class="product-title">FORMULA</h1>
                             <p class="product-description">The best product in the shop perfect <br> for your skin</p>
                             <div class="product-pricing">
                                 <a href="#">BUY NOW</a>
@@ -180,7 +183,7 @@
                             <img src="css/img/gel mix.png" alt="Product Aloe Vera">
                         </div>
                         <div class="product-info">
-                            <h1 class="product-title">PEPPERMINT</h1>
+                            <h1 class="product-title">DISINFECTANT</h1>
                             <p class="product-description">The best product in the shop perfect <br> for your skin</p>
                             <div class="product-pricing">
                                 <a href="#">BUY NOW</a>
@@ -194,7 +197,7 @@
                             <img src="css/img/hand gel.png" alt="Product Aloe Vera">
                         </div>
                         <div class="product-info">
-                            <h1 class="product-title">PEPPERMINT</h1>
+                            <h1 class="product-title">ORGANIC</h1>
                             <p class="product-description">The best product in the shop perfect <br> for your skin</p>
                             <div class="product-pricing">
                                 <a href="#">BUY NOW</a>
@@ -208,7 +211,7 @@
                             <img src="css/img/percent gel.png" alt="Product Aloe Vera">
                         </div>
                         <div class="product-info">
-                            <h1 class="product-title">PEPPERMINT</h1>
+                            <h1 class="product-title">PLANTERS</h1>
                             <p class="product-description">The best product in the shop perfect <br> for your skin</p>
                             <div class="product-pricing">
                                 <a href="#">BUY NOW</a>
@@ -222,7 +225,7 @@
                             <img src="css/img/planters gel.png" alt="Product Aloe Vera">
                         </div>
                         <div class="product-info">
-                            <h1 class="product-title">PEPPERMINT</h1>
+                            <h1 class="product-title">COSMETICS</h1>
                             <p class="product-description">The best product in the shop perfect <br> for your skin</p>
                             <div class="product-pricing">
                                 <a href="#">BUY NOW</a>
@@ -258,7 +261,7 @@
                             <div class="testimony-text">
                                 <span class="quote"><i class="fas fa-solid fa-quote-left"></i></span>
                                 <p>"They are the best people. And this the suitable platform to learn from."</p>
-                                <p>Lani Lake - <span>Student</span></p>
+                                <p>Lani Lake - <span>Client</span></p>
                             </div>
                             <div class="testimony-img">
                                 <img src="css/img/luis.jpg" alt="">
@@ -270,7 +273,7 @@
                             <div class="testimony-text">
                                 <span class="quote"><i class="fas fa-solid fa-quote-left"></i></span>
                                 <p>"I will be working with them from now on because they are what they claim to be."</p>
-                                <p>Sishi Chii - <span>Student</span></p>
+                                <p>Sishi Chii - <span>C.E.O</span></p>
                             </div>
                             <div class="testimony-img">
                                 <img src="css/img/michael.jpg" alt="">
@@ -282,7 +285,7 @@
                             <div class="testimony-text">
                                 <span class="quote"><i class="fas fa-solid fa-quote-left"></i></span>
                                 <p>"They are the best lulu. And this the suitable platform to learn from."</p>
-                                <p>Brandon Lake - <span>Student</span></p>
+                                <p>Brandon Lake - <span>Client</span></p>
                             </div>
                             <div class="testimony-img">
                                 <img src="css/img/villasmil.jpg" alt="">
