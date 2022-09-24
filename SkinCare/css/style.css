@@ -197,7 +197,6 @@ header{
     top: 0;
 }
 .header-scroll.sticky{
-    background-color: #ffffff;
     box-shadow: 6px 6px 24px #00000033;
     transition: all ease 0.4s;
 }
@@ -207,15 +206,11 @@ header{
 .header-scroll.sticky .active-link{
     color: var(--active);
 }
-.header-scroll.sticky .color:hover{
-    color: #063959;
-}
 .header-scroll.sticky .menu-btn{
     color: var(--text);
 }
-.header {
+.header-scroll {
     background-color: #ffffff;
-    transition: all ease 0.4s;
 }
 .header .active-link{
     color: var(--active);

@@ -23,9 +23,7 @@ const menu = document.querySelector(".links");
 // Onscroll Change Nav Bar Background
 window.onscroll = ()=>{
     this.scrollY > 20 ? header.classList.add("sticky") : header.classList.remove("sticky");
-}
-window.onscroll = ()=>{
-  this.scrollY > 40 ? toTop.classList.add("show") : toTop.classList.remove("show");
+    this.scrollY > 80 ? toTop.classList.add("show") : toTop.classList.remove("show");
 }
 const toTop = document.querySelector(".to-top");
 
@@ -42,6 +40,36 @@ cancelBtn.onclick = ()=>{
 }
 
 /* == Sticky NavBar == */
+
+
+/* == RIBBLE EFFECT == */
+// document.onclick = () => applyCursorRippleEffect(event);
+
+// function applyCursorRippleEffect(e) {
+//    const ripple = document.createElement("div");
+  
+//    ripple.className = "ripple";
+//    document.body.appendChild(ripple);
+
+//   ripple.style.left = `${e.clientX}px`;
+//   ripple.style.top = `${e.clientY}px`; 
+//    ripple.style.animation = `ripple-effect .4s  linear`;
+//    ripple.onanimationend = () => {
+//      document.body.removeChild(ripple);
+     
+//    }
+  
+// }
+
+// // extra and optional part:
+
+// const all = document.body.getElementsByTagName("*");
+// for (var i = 0;  i < all.length; ++i) {
+//   all[i].onclick = (event) => event.stopPropagation();
+// }
+
+// If you remove this part you will realise  the ripple overlap. If you select the h1 element in the body the ripple is triggered. Perhaps you don't want that behaviour (the event bubbling down to body children), and so you may add this code. ITS DANGEROUS: for this occasion you may want, but there is specific cases wherein you don't want it at all. Its annoying, just like the discussion o Dev.to pointed out. This pen is simple, so it hasn't such problems. Links, buttons, css hovers, still work, but the ripple don't, that is, it will trigger only where you specifiy: body. As I said, there are possibily occasions you will have to specifiy which kind of elements won't receive this behaviour. This part is general, all elements in body don't receive propagation from its father.
+/* == RIBBLE EFFECT == */
 
 /* == TESTIMONIAL TABS == */
 var slideIndex = 1;
