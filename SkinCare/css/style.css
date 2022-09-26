@@ -888,6 +888,9 @@ footer{
     .banner-img img{
         width: 100%;
     }
+    .break{
+        display: none;
+    }
     .benefit{
         width: 90%;
     }
