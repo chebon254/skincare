@@ -1043,6 +1043,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .review-counter{
     font-weight: 600;
