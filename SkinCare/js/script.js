@@ -143,3 +143,10 @@ function slowScroll() {
 
 // })();
 /* == || Cursor == */
+
+
+/* == ON PRODUCT CLICK == */
+function productClick() {
+  location.href="product_detail.html";
+}
+/* == || ON PRODUCT CLICK == */
