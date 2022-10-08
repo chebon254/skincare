@@ -1056,6 +1056,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .review-counter{
     font-weight: 600;
@@ -1132,6 +1133,7 @@ footer{
     padding: 0px 6px;
 }
 /* == || PRODUCT DETAIL PG == */
+<<<<<<< HEAD
 
 
 /* == CART == */
@@ -1415,3 +1417,5 @@ footer{
     padding: 0px 6px;
 }
 /* == || SHIPPING == */
+=======
+>>>>>>> a6407a6336355e0fb526d0e0fbfc7a87f6f4b073
