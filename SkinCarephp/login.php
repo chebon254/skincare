@@ -17,9 +17,7 @@ if(isset($_POST['submit'])){
    }else{
       $message[] = 'incorrect email or password!';
    }
-
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -101,7 +99,7 @@ if(isset($_POST['submit'])){
                           <i class="fa-solid fa-lock"></i>
                         </div>
                         <div class="col-12">
-                          <button type="submit" name="submit" value="login now" >Sign Up</button>
+                          <button type="submit" name="submit" value="login now" >Sign In</button>
                         </div>
                        <p>Don't Have An Account? <a href="sign_up.php">SignUp</a></p>
                     </form>

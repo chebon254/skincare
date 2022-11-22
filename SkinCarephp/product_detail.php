@@ -90,20 +90,38 @@
 
     <!-- == MAIN == -->
         <main>
+            <section class="product-detail-headline">
+                <div class="container product-detail-cont">
+                    <div class="pagination">
+                        <a href="home.php" class="breadcrumb">Home <i class="fa-solid fa-angle-right"></i> </a><span class="breadcrumb-last">Product</span>
+                    </div>
+                </div>
+            </section>
             <section class="product-detail">
                 <div class="product-detail-container container">
                     <div class="product-detail-image reveal-fixed">
-                        <img src="css/img/gel boxed.png" alt="">
+                        <div class="product-tab-selection">
+                            <img src="css/img/aloe gel transparent.png" alt="Tab Image" class="tab-image">
+                            <img src="css/img/aloe gel transparent.png" alt="Tab Image" class="tab-image">
+                            <img src="css/img/aloe gel transparent.png" alt="Tab Image" class="tab-image">
+                            <img src="css/img/aloe gel transparent.png" alt="Tab Image" class="tab-image">
+                            <img src="css/img/aloe gel transparent.png" alt="Tab Image" class="tab-image">
+                        </div>
+                        <div class="product-image-selected">
+                            <img src="css/img/aloe gel transparent.png" alt="" class="product-detail-image">
+                        </div>
                     </div>
                     <div class="product-detail-text">
-                        <div class="pagination">
-                            <a href="index.html" class="breadcrumb">Home/</a><span class="breadcrumb-last">Product</span>
-                        </div>
+                        <span class="category-name">SkinCare</span>
                         <h1 class="product-detail-title">STARBERRY</h1>
+                        <div class="rating-input">        
+                            <span></span><span><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><span> 5 Reviews</span></span>
+                        </div>
                         <span class="product-detail-price">$45.99</span>
-                        <p class="product-detail-description">Erat orci consectetur consectetur consectetur eleifend habitasse est non aenean accumsan risus adipiscing laoreet risus. Libero sed consectetur sit taciti montes suspendisse adipiscing a ligula adipiscing arcu rutrum in praesent nec suspendisse a nec condimentum eu elementum. Mauris mollis a per ipsum nulla eget consectetur egestas iaculis adipiscing at a vestibulum montes sagittis sed pharetra lectus massa eu ut fermentum.</p>
+                        <p class="product-detail-description">Special soap, shampoo or moisturizer, beauty brands that sell directly to consumers without involving a retailer face multiple challenges. How can you make consumers aware of your brand if you don’t have the visibility</p>
                         <button class="product-detail-btn">+ ADD TO CART <i class="fa-solid fa-cart-shopping"></i></button>
-                        <button class="product-detail-veiwcart-btn" onclick="location.href='cart.html'">VIEW CART <i class="fa-solid fa-eye"></i></button>
+                        <button class="product-detail-veiwcart-btn" onclick="location.href='cart.html'">VIEW CART <i class="fa-solid fa-eye"></i></button> <br>
+                        <span class="social-share"><span class="share-title">SHARE ON: </span><span><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-whatsapp"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-facebook"></i></a></span></span>
                     </div>
                 </div>
             </section>
