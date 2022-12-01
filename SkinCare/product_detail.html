@@ -90,20 +90,69 @@
 
     <!-- == MAIN == -->
         <main>
+            <section class="product-detail-headline">
+                <div class="container product-detail-cont">
+                    <div class="pagination">
+                        <a href="index.php" class="breadcrumb">Home <i class="fa-solid fa-angle-right"></i> </a><span class="breadcrumb-last">Shampoo</span>
+                    </div>
+                </div>
+            </section>
             <section class="product-detail">
                 <div class="product-detail-container container">
                     <div class="product-detail-image reveal-fixed">
-                        <img src="css/img/gel boxed.png" alt="">
+                        <div class="product-tab-selection">
+                            <img src="css/img/aloe gel transparent.png" alt="Tab Image" class="tab-image">
+                            <img src="css/img/aloe gel transparent.png" alt="Tab Image" class="tab-image">
+                            <img src="css/img/aloe gel transparent.png" alt="Tab Image" class="tab-image">
+                            <img src="css/img/aloe gel transparent.png" alt="Tab Image" class="tab-image">
+                        </div>
+                        <div class="product-image-selected">
+                            <img src="css/img/aloe gel transparent.png" alt="" class="product-detail-image">
+                        </div>
                     </div>
                     <div class="product-detail-text">
-                        <div class="pagination">
-                            <a href="index.html" class="breadcrumb">Home/</a><span class="breadcrumb-last">Product</span>
+                    <form action="" method="post">
+                    <div class="p-quantity" style="display: none !important;">
+                                <div class="row">
+                                    <div class="col-md-12 mb_20"> <br>
+                                        <select name="size_id" class="form-control select2" style="width:auto;">
+                                                    <option value="<?php echo $row['size_id']; ?>"><?php echo $row['size_name']; ?></option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12"><br>
+                                        <select name="color_id" class="form-control select2" style="width:auto;">
+                                                    <option value="<?php echo $row['color_id']; ?>"><?php echo $row['color_name']; ?></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="p-price">
+                                <span style="font-size:14px;">Shampoo</span><br>
+                                <span>
+                                    <?php if($p_old_price!=''): ?>
+                                        <del><?php echo LANG_VALUE_1; ?><?php echo $p_old_price; ?></del>
+                                    <?php endif; ?> 
+                                        <?php echo LANG_VALUE_1; ?><?php echo $p_current_price; ?>
+                                </span>
+                            </div>
+                            <input type="hidden" name="p_current_price" value="<?php echo $p_current_price; ?>">
+                            <input type="hidden" name="p_name" value="<?php echo $p_name; ?>">
+                            <input type="hidden" name="p_featured_photo" value="<?php echo $p_featured_photo; ?>">
+                            <div class="p-quantity">
+                                <?php echo LANG_VALUE_55; ?> <br>
+                                <input type="number" class="input-text qty" step="1" min="1" max="" name="p_qty" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric">
+                            </div>
+                            </div>
+                        <span class="category-name">SkinCare</span>
+                        <h1 class="product-detail-title">STARBERRY Cudburry</h1>
+                        <div class="rating-input">        
+                            <span></span><span><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><span> 5 Reviews</span></span>
                         </div>
-                        <h1 class="product-detail-title">STARBERRY</h1>
-                        <span class="product-detail-price">$45.99</span>
-                        <p class="product-detail-description">Erat orci consectetur consectetur consectetur eleifend habitasse est non aenean accumsan risus adipiscing laoreet risus. Libero sed consectetur sit taciti montes suspendisse adipiscing a ligula adipiscing arcu rutrum in praesent nec suspendisse a nec condimentum eu elementum. Mauris mollis a per ipsum nulla eget consectetur egestas iaculis adipiscing at a vestibulum montes sagittis sed pharetra lectus massa eu ut fermentum.</p>
-                        <button class="product-detail-btn">+ ADD TO CART <i class="fa-solid fa-cart-shopping"></i></button>
-                        <button class="product-detail-veiwcart-btn" onclick="location.href='cart.html'">VIEW CART <i class="fa-solid fa-eye"></i></button>
+                        <span class="product-detail-price">$50</span>
+                        <p class="product-detail-description">Shampoo or moisturizer, beauty brands that sell directly to consumers without involving a retailer face multiple challenges. How can you make consumers aware of your brand if you don’t have the visibility</p>
+                        <button class="product-detail-btn" type="submit" value="" name="form_add_to_cart">+ ADD TO CART <i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="product-detail-veiwcart-btn" >VIEW CART <i class="fa-solid fa-eye"></i></button>
+                    </form>
+                        <span class="social-share"><span class="share-title">SHARE ON: </span><span><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-whatsapp"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-facebook"></i></a></span></span>
                     </div>
                 </div>
             </section>

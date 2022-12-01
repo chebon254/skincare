@@ -972,8 +972,11 @@ footer{
 
 
 /* == PRODUCT DETAIL PG == */
-.product-detail{
-    padding: 180px 0px 80px;
+.product-detail-headline{
+    padding: 140px 0px 20px;
+}
+.product-detail-cont{
+    padding: 0px 20px;
 }
 .product-detail-container{
     display: flex;
@@ -981,32 +984,55 @@ footer{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.product-detail-image {
-    max-width: 600px;
-    padding: 40px;
+.product-detail-cont .breadcrumb{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--camoflouge);
+    letter-spacing: 0.05em;
+}
+.product-detail-cont .breadcrumb-last{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: 0.05em;
 }
 .product-detail-text {
     max-width: 600px;
     min-width: 280px;
     min-height: 500px;
 }
-.product-detail-text .breadcrumb{
-    font-size: 14px;
-    font-weight: 500;
+.product-detail-image {
+    max-width: 600px;
+    height: 100%;
+    min-height: 400px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product-tab-selection img{
+    display: block;
+}
+.product-tab-selection .tab-image{
+    height: 50px;
+    width: 50px;
+    margin: 0px 5px 15px;
+}
+.product-detail-text .category-name{
+    font-weight: 400;
     color: var(--camoflouge);
     letter-spacing: 0.05em;
+    margin: 0px;
 }
-.product-detail-text .breadcrumb-last{
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--text);
-    letter-spacing: 0.05em;
+.product-detail-text .rating-input{
+    margin: 0px 0px 20px;
 }
 .product-detail-title{
     font-weight: 800;
     color: var(--text);
     letter-spacing: 0.05em;
-    margin: 20px 0px;
+    margin: 0px;
 }
 .product-detail-price{
     font-weight: 600;
@@ -1019,7 +1045,7 @@ footer{
     color: var(--text);
     letter-spacing: 0.05em;
     margin: 10px 0px 20px;
-    min-height: 178px;
+    min-height: 120px;
 }
 .product-detail-btn{
     height: 44px;
@@ -1044,6 +1070,19 @@ footer{
     letter-spacing: 0.05em;
     margin: 0px 4px 20px;
     padding: 0px 6px;
+}
+.social-share{
+    font-size: 18px;
+    padding: 14px 0px 4px;
+}
+.social-share .share-title {
+    font-weight: 600;
+    color: var(--camoflouge);
+}
+.social-share a{
+    margin: 0px 5px;
+    text-decoration: none;
+    color: var(--text);
 }
 .review-product{
     padding: 40px 0px 100px;
@@ -1133,7 +1172,6 @@ footer{
     padding: 0px 6px;
 }
 /* == || PRODUCT DETAIL PG == */
-<<<<<<< HEAD
 
 
 /* == CART == */
