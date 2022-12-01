@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    margin: 0;
+    height: 100% !important;
+    width: 100% !important;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+
+:root{
+    --active: #8fd974;
+    --white: #ffffff;
+    --white-tint: #f9f9f9;
+    --camoflouge: #a0a0a0;
+    --text: #394141;
+}
+html {
+    scroll-behavior: smooth;
+  }  
+/* == SCROLL BAR == */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: var(--text);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--active);
+}
+
+/* ==== ADMINISTRATION ==== */
+/* ==== ADMIN ==== */
+.dashboard{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dashboard-side-nav{
+    height: 100%;
+    width: 100%;
+    min-width: 200px;
+    max-width: 280px;
+    background-color: var(--text);
+    padding: 20px;
+    display: block;
+    position: relative;
+}
+.dashboard-side-nav .links{
+    overflow: auto;
+}
+.dashboard-side-nav .link{
+    height: 48px;
+    width: 100%;
+    font-size: 14px;
+    color: var(--white);
+    background-color: #00000000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 6px;
+    border: 0px;
+    outline: none;
+}
+.dashboard-side-nav .link:focus{
+    outline: none;
+}
+.dashboard-side-nav .link:hover{
+    transition: 200ms;
+    background-color: var(--white);
+    color: var(--text);
+}
+.dashboard-side-nav .link:hover span, 
+.dashboard-side-nav .link:hover i {
+    color: var(--text) !important;
+}
+.dashboard-side-nav .link .icon{
+    height: 42px;
+    width: 42px;
+    font-size: 18px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dashboard-side-nav .link .text{
+    padding: 0px 4px;
+}
+.dashboard-side-nav .link .text span{
+    color: var(--white);
+}
+.side-nav-links .logo-top{
+    padding: 0px 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.side-nav-links .logo-top a, i{
+    color: #ffffff;
+    font-size: 18px;
+}
+.dashboard-side-nav .current-user{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: #515a5a;
+}
+.dashboard-side-nav .current-user .profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.dashboard-side-nav .current-user .profile .name{
+    padding: 0px 0px 0px 10px;
+}
+.dashboard-side-nav .current-user .profile .name h4{
+    color: var(--white);
+}
+.dashboard-side-nav .current-user .profile .name p{
+    color: var(--active);
+}
+.dashboard-side-nav .current-user img{
+    height: 60px;
+    width: 60px;
+    border-radius: 6px;
+}
+.dashboard-side-nav .current-user a{
+    color: var(--white);
+}
+.dashboard-content{
+    height: 100%;
+    width: 100%;
+    min-width: 280px;
+    max-width: 100%;
+    background-color: var(--white);
+    padding: 20px;
+    display: block;
+    position: relative;
+}
+.dashboard-content .tabcontent{
+    display: none;
+}
+/* ==== || ADMIN ==== */
+/* ==== || ADMINISTRATION ==== */
