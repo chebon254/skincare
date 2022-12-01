@@ -1421,3 +1421,83 @@ footer{
 
 
 
+/* == FORMS == */
+.form-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-holder{
+    height: 600px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.undraw-svg{
+    padding: 10px;
+}
+.undraw-svg, .undraw-svg svg{
+    max-height: 500px;
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+}
+.form{
+    padding: 10px 0px 10px 20px;
+}
+.form-group{
+    position: relative;
+}
+.form-group i{
+    position: absolute;
+    left: 10px;
+    top: 52px;
+    color: var(--text);
+    font-size: 18px;
+}
+.title{
+    padding: 20px 0px;
+}
+.title h1{
+     font-size: 40px;
+     font-weight: 600;
+     color: var(--text);
+}
+.form-container form label{
+    font-size: 16px;
+     font-weight: 400;
+     color: var(--text);
+     margin: 10px 0px;
+}
+.form-container form input{
+    height: 50px;
+    width: 240px;
+    border: 1px solid var(--text);
+    outline: 0px;
+    padding: 0px 0px 0px 40px;
+    margin: 10px 0px;
+    background-color: var(--white);
+    border-radius: 4px;
+    font-size: 16px;
+     font-weight: 400;
+     color: var(--text);
+  }
+
+.form-container form button{
+    height: 50px;
+    width: 240px;
+    border: 0px;
+    outline: 0px;
+    background-color: var(--active);
+    font-size: 18px;
+     font-weight: 400;
+     color: #ffffff;
+     margin: 20px 0px 10px;
+  }
+/* == FORMS == */
