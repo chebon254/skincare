@@ -1,3 +1,0 @@
-https://codewithawa.com/posts/admin-and-user-login-in-php-and-mysql-database
-
-YouTube: https://youtu.be/fC3j2U_UZrQ

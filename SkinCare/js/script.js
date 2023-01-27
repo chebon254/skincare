@@ -129,6 +129,9 @@ function slowScroll() {
     location.href='#products';
   }, 1200);
 }
+function cartClick() {
+  location.href="cart.html";
+}
 
 /* == Cursor == */
 // (function (){
